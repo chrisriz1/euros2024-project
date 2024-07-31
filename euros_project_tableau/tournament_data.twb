@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0613.1930                               -->
+<workbook original-version='18.1' source-build='2024.2.0 (20242.24.0613.1930)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Custom SQL Query (mydb)' inline='true' name='federated.0t508r11ygy7jl1esizpi01lfbnp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.02e3xn705xy5z319maioy0rkt0pw'>
+            <connection class='mysql' dbname='mydb' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.02e3xn705xy5z319maioy0rkt0pw' name='Custom SQL Query' type='text'>WITH tournament_calculation AS (&#13;
+SELECT &#13;
+    SUM(home_goals) AS total_home_goals,&#13;
+    SUM(away_goals) AS total_away_goals,&#13;
+    SUM(home_yellow_cards) AS total_home_yellow_cards,&#13;
+    SUM(away_yellow_cars) AS total_away_yellow_cards,&#13;
+    SUM(home_red_cards) AS total_home_red_cards,&#13;
+    SUM(away_red_cars) AS total_away_red_cards,&#13;
+    SUM(home_big_chances_missed) AS total_home_big_chances_missed,&#13;
+    SUM(away_big_chances_missed) AS total_away_big_chances_missed,&#13;
+    SUM(home_fouls_committed) AS total_home_fouls_committed,&#13;
+    SUM(away_fouls_commited) AS total_away_fouls_committed&#13;
+FROM euros2024_matches&#13;
+)&#13;
+SELECT&#13;
+    total_home_goals + total_away_goals AS total_goals,&#13;
+    total_home_yellow_cards + total_away_yellow_cards AS total_yellow_cards,&#13;
+    total_home_red_cards + total_away_red_cards AS total_red_cards,&#13;
+    total_home_big_chances_missed + total_away_big_chances_missed AS total_big_chances_missed,&#13;
+    total_home_fouls_committed + total_away_fouls_committed AS total_fouls_committed&#13;
+FROM tournament_calculation</_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mysql.02e3xn705xy5z319maioy0rkt0pw' name='Custom SQL Query' type='text'>WITH tournament_calculation AS (&#13;
+SELECT &#13;
+    SUM(home_goals) AS total_home_goals,&#13;
+    SUM(away_goals) AS total_away_goals,&#13;
+    SUM(home_yellow_cards) AS total_home_yellow_cards,&#13;
+    SUM(away_yellow_cars) AS total_away_yellow_cards,&#13;
+    SUM(home_red_cards) AS total_home_red_cards,&#13;
+    SUM(away_red_cars) AS total_away_red_cards,&#13;
+    SUM(home_big_chances_missed) AS total_home_big_chances_missed,&#13;
+    SUM(away_big_chances_missed) AS total_away_big_chances_missed,&#13;
+    SUM(home_fouls_committed) AS total_home_fouls_committed,&#13;
+    SUM(away_fouls_commited) AS total_away_fouls_committed&#13;
+FROM euros2024_matches&#13;
+)&#13;
+SELECT&#13;
+    total_home_goals + total_away_goals AS total_goals,&#13;
+    total_home_yellow_cards + total_away_yellow_cards AS total_yellow_cards,&#13;
+    total_home_red_cards + total_away_red_cards AS total_red_cards,&#13;
+    total_home_big_chances_missed + total_away_big_chances_missed AS total_big_chances_missed,&#13;
+    total_home_fouls_committed + total_away_fouls_committed AS total_fouls_committed&#13;
+FROM tournament_calculation</_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>total_goals</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[total_goals]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>total_goals</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>33</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_94523F2AC8974B17A964F4C4CA90DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_yellow_cards</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[total_yellow_cards]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>total_yellow_cards</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>33</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_94523F2AC8974B17A964F4C4CA90DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_red_cards</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[total_red_cards]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>total_red_cards</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>33</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_94523F2AC8974B17A964F4C4CA90DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_big_chances_missed</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[total_big_chances_missed]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>total_big_chances_missed</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>33</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_94523F2AC8974B17A964F4C4CA90DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_fouls_committed</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[total_fouls_committed]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>total_fouls_committed</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>33</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_94523F2AC8974B17A964F4C4CA90DF15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Custom SQL Query' datatype='table' name='[__tableau_internal_object_id__].[_94523F2AC8974B17A964F4C4CA90DF15]' role='measure' type='quantitative' />
+      <column caption='Big Chances Missed' datatype='real' name='[total_big_chances_missed]' role='measure' type='quantitative' />
+      <column caption='Fouls Committed' datatype='real' name='[total_fouls_committed]' role='measure' type='quantitative' />
+      <column caption='Goals Scored' datatype='real' name='[total_goals]' role='measure' type='quantitative' />
+      <column caption='Red Cards' datatype='real' name='[total_red_cards]' role='measure' type='quantitative' />
+      <column caption='Yellow Cards' datatype='real' name='[total_yellow_cards]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Custom SQL Query' id='_94523F2AC8974B17A964F4C4CA90DF15'>
+            <properties context=''>
+              <relation connection='mysql.02e3xn705xy5z319maioy0rkt0pw' name='Custom SQL Query' type='text'>WITH tournament_calculation AS (&#13;
+SELECT &#13;
+    SUM(home_goals) AS total_home_goals,&#13;
+    SUM(away_goals) AS total_away_goals,&#13;
+    SUM(home_yellow_cards) AS total_home_yellow_cards,&#13;
+    SUM(away_yellow_cars) AS total_away_yellow_cards,&#13;
+    SUM(home_red_cards) AS total_home_red_cards,&#13;
+    SUM(away_red_cars) AS total_away_red_cards,&#13;
+    SUM(home_big_chances_missed) AS total_home_big_chances_missed,&#13;
+    SUM(away_big_chances_missed) AS total_away_big_chances_missed,&#13;
+    SUM(home_fouls_committed) AS total_home_fouls_committed,&#13;
+    SUM(away_fouls_commited) AS total_away_fouls_committed&#13;
+FROM euros2024_matches&#13;
+)&#13;
+SELECT&#13;
+    total_home_goals + total_away_goals AS total_goals,&#13;
+    total_home_yellow_cards + total_away_yellow_cards AS total_yellow_cards,&#13;
+    total_home_red_cards + total_away_red_cards AS total_red_cards,&#13;
+    total_home_big_chances_missed + total_away_big_chances_missed AS total_big_chances_missed,&#13;
+    total_home_fouls_committed + total_away_fouls_committed AS total_fouls_committed&#13;
+FROM tournament_calculation</relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (mydb)' name='federated.0t508r11ygy7jl1esizpi01lfbnp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0t508r11ygy7jl1esizpi01lfbnp'>
+            <column-instance column='[total_big_chances_missed]' derivation='Sum' name='[sum:total_big_chances_missed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_fouls_committed]' derivation='Sum' name='[sum:total_fouls_committed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_goals]' derivation='Sum' name='[sum:total_goals:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_red_cards]' derivation='Sum' name='[sum:total_red_cards:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_yellow_cards]' derivation='Sum' name='[sum:total_yellow_cards:qk]' pivot='key' type='quantitative' />
+            <column caption='Big Chances Missed' datatype='real' name='[total_big_chances_missed]' role='measure' type='quantitative' />
+            <column caption='Fouls Committed' datatype='real' name='[total_fouls_committed]' role='measure' type='quantitative' />
+            <column caption='Goals Scored' datatype='real' name='[total_goals]' role='measure' type='quantitative' />
+            <column caption='Red Cards' datatype='real' name='[total_red_cards]' role='measure' type='quantitative' />
+            <column caption='Yellow Cards' datatype='real' name='[total_yellow_cards]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0t508r11ygy7jl1esizpi01lfbnp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0t508r11ygy7jl1esizpi01lfbnp].[sum:total_goals:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0t508r11ygy7jl1esizpi01lfbnp].[sum:total_big_chances_missed:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0t508r11ygy7jl1esizpi01lfbnp].[sum:total_yellow_cards:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0t508r11ygy7jl1esizpi01lfbnp].[sum:total_red_cards:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0t508r11ygy7jl1esizpi01lfbnp].[sum:total_fouls_committed:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0t508r11ygy7jl1esizpi01lfbnp].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0t508r11ygy7jl1esizpi01lfbnp].[sum:total_goals:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0t508r11ygy7jl1esizpi01lfbnp].[sum:total_big_chances_missed:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0t508r11ygy7jl1esizpi01lfbnp].[sum:total_yellow_cards:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0t508r11ygy7jl1esizpi01lfbnp].[sum:total_red_cards:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0t508r11ygy7jl1esizpi01lfbnp].[sum:total_fouls_committed:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0t508r11ygy7jl1esizpi01lfbnp].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='5' />
+            <format attr='width' field='[federated.0t508r11ygy7jl1esizpi01lfbnp].[:Measure Names]' value='89' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0t508r11ygy7jl1esizpi01lfbnp].[Multiple Values]' />
+              <lod column='[federated.0t508r11ygy7jl1esizpi01lfbnp].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0t508r11ygy7jl1esizpi01lfbnp].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{F3D7E691-E1D9-4968-A49B-8A5810E1C3A7}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0t508r11ygy7jl1esizpi01lfbnp].[:Measure Names]</field>
+            <field>[federated.0t508r11ygy7jl1esizpi01lfbnp].[sum:total_goals:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4C74107B-3158-4A7D-9C03-4F9BC1D0C5AA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='64' name='Sheet 1' width='192'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
