@@ -28,10 +28,12 @@ Steps Taken
 8. Data Visualization: Connected to MySQL in Tableau and applied custom queries to obtain valuable insights identified in step 3. Uploaded necessary Excel files, such as "euro_scorers" and "euro_assisters," and built all visualizations.
 9. PowerPoint: Created a dashboard layout in PowerPoint, which was then used in Tableau to place all visualizations.
 10. Revision, Editing, and Formatting: Edited, revised, and formatted the dashboard to ensure it was aesthetically pleasing and professional.
+    
 Results
 - Analyzed team performance
 - Created player statistics
 - Developed visualizations to illustrate key findings
 
 Conclusion
+
 This project provided valuable insights into the performance of teams and players in the UEFA Euros 2024 tournament. It served as an excellent foundation for demonstrating the various skills I have acquired and for showcasing my ability to create an analytical dashboard.
