@@ -3,6 +3,7 @@ Data analytics projects ont he UEFA Euros 2024 tournament using Microsoft Excel,
 Euros 2024 Soccer Tournament Data Analysis
 
 Description
+
 The purpose of this project was to analyze the performance of teams and players in the UEFA Euros 2024 tournament using various tools and technologies. Additionally, it served as a practical application of the skills I have learned to create my first analytics project.
 
 Technologies Used
