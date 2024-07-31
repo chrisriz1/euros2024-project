@@ -18,6 +18,7 @@ Technologies Used
     - Kaggle public datasets https://www.kaggle.com/
 
 Steps Taken
+
 1. Data Collection: Gathered data from Kaggle and the official UEFA website. From Kaggle, a CSV file containing data about the teams participating in the Euros 2024 tournament was obtained. The official UEFA website provided data on player performance, which was imported into Microsoft Excel.
 2. Data Cleaning: Cleaned and pre-processed the CSV file from Kaggle using Microsoft Excel and MySQL.
 3. Data Analysis: Analyzed the data to find key insights and determine the focus of the dashboard.
