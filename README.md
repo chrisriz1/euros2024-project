@@ -37,6 +37,8 @@ Results
 - Created player statistics
 - Developed visualizations to illustrate key findings
 
+To view the dashboard you must have a Tableau account and login into it, then click on this link https://us-east-1.online.tableau.com/t/cr863-5d00d7dc7b/views/DASHBOARD_final/Dashboard1?:origin=card_share_link&:embed=n\
+
 Conclusion
 
 This project provided valuable insights into the performance of teams and players in the UEFA Euros 2024 tournament. It served as an excellent foundation for demonstrating the various skills I have acquired and for showcasing my ability to create an analytical dashboard.
