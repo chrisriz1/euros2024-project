@@ -39,7 +39,7 @@ Results
 
 To view the final dashboard you must have a Tableau account and login into it, then click on this link https://us-east-1.online.tableau.com/t/cr863-5d00d7dc7b/views/DASHBOARD_final/Dashboard1?:origin=card_share_link&:embed=n\ 
 
-**NOTE** 
+**NOTE**: 
 The dashboard seen using this link will differ from the actual dashboard since Tableau Cloud doesn't support the font that was used in the final dashboard. 
 
 It is recommended to download the final_eurodashboard packaged workbook and upload onto Tableau Reader. 
