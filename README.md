@@ -3,11 +3,11 @@ Data analytics projects on the UEFA Euros 2024 tournament using Microsoft Excel,
 
 Euros 2024 Soccer Tournament Data Analysis
 
-Description
+<ins>**Description**</ins>
 
 The purpose of this project was to analyze the performance of teams and players in the UEFA Euros 2024 tournament using various tools and technologies. Additionally, it served as a practical application of the skills I have learned to create my first analytics project.
 
-Technologies Used
+<ins>**Technologies Used**</ins>
 - Microsoft Excel
 - MySQL
 - Adobe Photoshop
@@ -19,7 +19,7 @@ Technologies Used
     - Official UEFA website https://www.uefa.com/euro2024/
     - Kaggle public datasets https://www.kaggle.com/
 
-Steps Taken
+<ins>**Steps Taken**</ins>
 
 1. Data Collection: Gathered data from Kaggle and the official UEFA website. From Kaggle, a CSV file containing data about the teams participating in the Euros 2024 tournament was obtained. The official UEFA website provided data on player performance, which was imported into Microsoft Excel.
 2. Data Cleaning: Cleaned and pre-processed the CSV file from Kaggle using Microsoft Excel and MySQL.
@@ -32,7 +32,7 @@ Steps Taken
 9. PowerPoint: Created a dashboard layout in PowerPoint, which was then used in Tableau to place all visualizations.
 10. Revision, Editing, and Formatting: Edited, revised, and formatted the dashboard to ensure it was aesthetically pleasing and professional.
     
-Results
+<ins>**Results**</ins>
 - Analyzed team performance
 - Created player statistics
 - Developed visualizations to illustrate key findings
@@ -44,6 +44,6 @@ The dashboard seen using this link will differ from the actual dashboard since T
 
 It is recommended to download the final_eurodashboard packaged workbook and upload onto Tableau Reader. 
 
-Conclusion
+<ins>**Conclusion**</ins>
 
 This project provided valuable insights into the performance of teams and players in the UEFA Euros 2024 tournament. It served as an excellent foundation for demonstrating the various skills I have acquired and for showcasing my ability to create an analytical dashboard.
